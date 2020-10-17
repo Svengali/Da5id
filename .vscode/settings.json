@@ -71,5 +71,6 @@
         "style.c": "cpp",
         "overview.c": "cpp",
         "*.mm": "cpp"
-    }
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

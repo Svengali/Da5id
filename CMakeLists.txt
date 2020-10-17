@@ -15,6 +15,9 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/DiligentCorePro")
     add_subdirectory(DiligentCorePro)
 endif()
 
+add_subdirectory(third_party)
+
+
 if(${DILIGENT_BUILD_TOOLS})
     add_subdirectory(DiligentTools)
 else()
