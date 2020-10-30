@@ -16,3 +16,6 @@
 [submodule "third_party/cblib"]
 	path = third_party/cblib
 	url = https://github.com/Svengali/cblib
+[submodule "Projects/Cubit"]
+	path = Projects/Cubit
+	url = https://github.com/Svengali/Cubit

@@ -8,6 +8,9 @@
 // Intel does not assume any responsibility for any errors which may appear in this software
 // nor any responsibility to update it.
 
+#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING 1
+
+
 #include <d3dcompiler.h>
 #include <directxmath.h>
 #include <d3dx12.h>

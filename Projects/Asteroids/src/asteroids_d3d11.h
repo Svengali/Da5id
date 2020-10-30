@@ -10,6 +10,9 @@
 
 #pragma once
 
+#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING 1
+
+
 #include <d3d11.h>
 #include <dxgi1_2.h>
 #include <directxmath.h>

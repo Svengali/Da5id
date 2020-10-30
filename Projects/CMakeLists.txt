@@ -7,3 +7,5 @@ if(PLATFORM_WIN32 AND D3D11_SUPPORTED AND D3D12_SUPPORTED)
         message("Unable to find Diligent-TextureLoader target: Asteroids demo will be disabled")
     endif()
 endif()
+
+add_subdirectory(Cubit)

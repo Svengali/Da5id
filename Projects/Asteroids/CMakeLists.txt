@@ -2,6 +2,11 @@ cmake_minimum_required (VERSION 3.10)
 
 project(Asteroids CXX)
 
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
 set(SOURCE
     src/asteroids_d3d11.cpp
     src/asteroids_d3d12.cpp
@@ -112,8 +117,13 @@ PRIVATE
 
 get_supported_backends(ENGINE_LIBRARIES)
 
+target_include_directories(Asteroids PUBLIC ../../third_party/Pham/src)
+
+
 target_link_libraries(Asteroids
 PRIVATE
+    cblib
+    Pham
     Diligent-BuildSettings
     Diligent-TargetPlatform
     Diligent-TextureLoader

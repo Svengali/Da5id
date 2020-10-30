@@ -26,6 +26,16 @@
 #include "camera.h"
 #include "gui.h"
 
+
+#include <optional>
+
+#include "cblib_includes.h"
+
+#include "pham_core.h"
+
+#include "vox/vox.h"
+
+
 using namespace DirectX;
 
 namespace {
@@ -339,6 +349,10 @@ int InitWorkload(HWND hWnd, AsteroidsSimulation &asteroids)
 
 void CreateDemoWindow(HWND& hWnd)
 {
+
+    //vox::testVox();
+
+
     RECT windowRect = { 100, 100, gSettings.windowWidth, gSettings.windowHeight };
     if(hWnd)
     {

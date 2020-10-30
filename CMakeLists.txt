@@ -4,6 +4,9 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 project(DiligentEngine)
 
+set(CMAKE_TOOLS_DIR "${PROJECT_SOURCE_DIR}/cmake")
+
+
 option(DILIGENT_BUILD_TOOLS "Build DiligentTools module" ON)
 option(DILIGENT_BUILD_FX "Build DiligentFX module" ON)
 option(DILIGENT_BUILD_SAMPLES "Build DiligentSamples module" ON)

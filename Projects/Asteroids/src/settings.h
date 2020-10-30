@@ -13,6 +13,7 @@
 #include "camera.h"
 #include "common_defines.h"
 
+
 // Profiling
 #define ENABLE_VTUNE_TASK_PROFILING 1
 
