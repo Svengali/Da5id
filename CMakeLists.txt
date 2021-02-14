@@ -9,9 +9,9 @@ set(CMAKE_TOOLS_DIR "${PROJECT_SOURCE_DIR}/cmake")
 
 option(DILIGENT_BUILD_TOOLS "Build DiligentTools module" ON)
 option(DILIGENT_BUILD_FX "Build DiligentFX module" ON)
-option(DILIGENT_BUILD_SAMPLES "Build DiligentSamples module" ON)
+option(DILIGENT_BUILD_SAMPLES "Build DiligentSamples module" OFF)
 option(DILIGENT_BUILD_DEMOS "Build demo projects" ON)
-option(DILIGENT_BUILD_UNITY_PLUGIN "Build Unity plugin" ON)
+option(DILIGENT_BUILD_UNITY_PLUGIN "Build Unity plugin" OFF)
 
 add_subdirectory(DiligentCore)
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/DiligentCorePro")
