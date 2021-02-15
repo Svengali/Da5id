@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.6)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
-project(DiligentEngine)
+project(Da5id)
 
 set(CMAKE_TOOLS_DIR "${PROJECT_SOURCE_DIR}/cmake")
 
