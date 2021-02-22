@@ -1,4 +1,4 @@
-#include "structures.fxh"
+#include "assets/structures.fxh"
 
 cbuffer VSConstants
 {

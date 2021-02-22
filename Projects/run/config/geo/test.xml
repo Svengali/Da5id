@@ -1,0 +1,8 @@
+<geo>
+	<m_vertexShader source="assets/cube.vsh" />
+	<m_pixelShader	source="assets/cube.psh" />
+	<m_texture			source="assets/DGLogo.png" />
+	<m_vertexBuf		source="+gen:0.5.verts"/>
+	<m_indexBuf			source="+gen:0.5.indices"/>
+
+</geo>
