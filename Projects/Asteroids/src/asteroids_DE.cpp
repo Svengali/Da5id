@@ -1100,11 +1100,11 @@ void Asteroids::Render(float frameTime, const OrbitCamera& camera, const Setting
                     mSpriteSRB->GetVariableByName(SHADER_TYPE_PIXEL, "Tex")->Set(textureSRV);
                     mDeviceCtxt->CommitShaderResources(mSpriteSRB, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
                 }
-                DrawAttribs DrawAttrs(controlVertices[1 + i], DRAW_FLAG_VERIFY_ALL);
+                DrawAttribs DrawAttrs(controlVertices[i + 1], DRAW_FLAG_VERIFY_ALL);
                 DrawAttrs.StartVertexLocation = vertexStart;
                 mDeviceCtxt->Draw(DrawAttrs);
             }
-            vertexStart += controlVertices[1 + i];
+            vertexStart += controlVertices[i + 1];
         }
     }
 
