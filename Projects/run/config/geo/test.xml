@@ -5,4 +5,19 @@
 	<m_vertexBuf		source="+gen:0.5.verts"/>
 	<m_indexBuf			source="+gen:0.5.indices"/>
 
+	<m_vertexBuf2 creator="GenIsocahedron">
+		<size v="10" />
+
+	</m_vertexBuf2>
+
+
+	<m_namedBuffers>
+		<i>
+			<m_name v="Constants"/>
+			<m_buffer creator="ResDGBufferCreator">
+				<size v="64" />
+				<desc v="VBConstants" />
+			</m_buffer>
+		</i>
+	</m_namedBuffers>
 </geo>
