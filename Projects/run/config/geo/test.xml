@@ -1,23 +1,27 @@
 <geo>
-	<m_vertexShader source="assets/cube.vsh" />
-	<m_pixelShader	source="assets/cube.psh" />
 	<m_texture			source="assets/DGLogo.png" />
+
+	<m_pso source="embed" t="ResDGPipelineState">
+		<m_vs source="assets/cube.vsh" />
+		<m_ps source="assets/cube.psh" />
+		<m_namedBuffers>
+			<i>
+				<m_name v="Constants"/>
+				<m_buffer creator="ResDGBufferCreator">
+					<size v="64" />
+					<desc v="VBConstants" />
+				</m_buffer>
+			</i>
+		</m_namedBuffers>
+	</m_pso>
+
 	<m_vertexBuf		source="+gen:0.5.verts"/>
 	<m_indexBuf			source="+gen:0.5.indices"/>
 
+
+	<!-- Not currently used -->
 	<m_vertexBuf2 creator="GenIsocahedron">
 		<size v="10" />
-
 	</m_vertexBuf2>
 
-
-	<m_namedBuffers>
-		<i>
-			<m_name v="Constants"/>
-			<m_buffer creator="ResDGBufferCreator">
-				<size v="64" />
-				<desc v="VBConstants" />
-			</m_buffer>
-		</i>
-	</m_namedBuffers>
 </geo>
