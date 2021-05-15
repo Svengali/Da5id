@@ -1,0 +1,7 @@
+<geo>
+
+	<m_texture source="assets/DGLogo.png" />
+
+	<m_pso source="config/geo/vox_VertPosNormalUV.res" />
+
+</geo>

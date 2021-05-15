@@ -6,7 +6,7 @@
 		<m_ps source="assets/cube.psh" />
 		<m_namedBuffers>
 			<i>
-				<m_name v="Constants"/>
+				<m_name v="VBConstants"/>
 				<m_buffer creator="ResDGBufferCreator">
 					<size v="64" />
 					<desc v="VBConstants" />
