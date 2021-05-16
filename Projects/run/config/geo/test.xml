@@ -18,10 +18,4 @@
 	<m_vertexBuf		source="+gen:0.5.verts"/>
 	<m_indexBuf			source="+gen:0.5.indices"/>
 
-
-	<!-- Not currently used -->
-	<m_vertexBuf2 creator="GenIsocahedron">
-		<size v="10" />
-	</m_vertexBuf2>
-
 </geo>
