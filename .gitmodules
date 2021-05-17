@@ -19,3 +19,6 @@
 [submodule "Projects/Cubit"]
 	path = Projects/Cubit
 	url = https://github.com/Svengali/Cubit
+[submodule "third_party/enkiTS"]
+	path = third_party/enkiTS
+	url = git@github.com:Svengali/enkiTS.git

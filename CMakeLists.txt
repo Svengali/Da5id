@@ -21,6 +21,7 @@ endif()
 add_subdirectory(third_party)
 
 
+
 if(${DILIGENT_BUILD_TOOLS})
     add_subdirectory(DiligentTools)
 else()
