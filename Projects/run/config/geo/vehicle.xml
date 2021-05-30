@@ -1,0 +1,21 @@
+<geo>
+	<m_texture			source="assets/DGLogo.png" />
+
+	<m_pso source="embed" t="ResDGPipelineState">
+		<m_vs source="assets/vehicle.vsh" />
+		<m_ps source="assets/vehicle.psh" />
+		<m_namedBuffers>
+			<i>
+				<m_name v="VehicleConstants"/>
+				<m_buffer creator="ResDGBufferCreator">
+					<size v="64" />
+					<desc v="VehicleConstants" />
+				</m_buffer>
+			</i>
+		</m_namedBuffers>
+	</m_pso>
+
+	<m_vertexBuf		source="+gen:0.5.verts"/>
+	<m_indexBuf			source="+gen:0.5.indices"/>
+
+</geo>
