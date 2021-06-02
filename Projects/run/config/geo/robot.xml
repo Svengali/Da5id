@@ -15,10 +15,10 @@
 		</m_namedBuffers>
 	</m_pso>
 
-	<m_vertexBuf source="+tank" creator="ResDGCubeCreator">
-		<length v="8.0" />
-		<width  v="3.6" />
-		<height v="2.44" />
+	<m_vertexBuf source="+robot" creator="ResDGCubeCreator">
+		<length v="0.5" />
+		<width  v="1.0" />
+		<height v="1.9" />
 	</m_vertexBuf>
 	<m_indexBuf source="+gen:0.5.indices"/>
 
