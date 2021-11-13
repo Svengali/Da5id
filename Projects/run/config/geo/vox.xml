@@ -1,7 +1,12 @@
 <geo>
 
-	<m_texture source="assets/DGLogo.png" />
+<!--
+	<m_texture source="assets/proto/Light/texture_02.png" />
+-->
 
-	<m_pso source="config/geo/vox_VertPosNormalUV.res" />
+	<m_texture source="assets/noise.png" />
+
+
+	<m_pso source="config/geo/vox_VertPosNormalColorUV.res" />
 
 </geo>

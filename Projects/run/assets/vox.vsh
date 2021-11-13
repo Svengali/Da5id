@@ -12,13 +12,15 @@ struct VSInput
 {
   float3 Pos : ATTRIB0;
   float3 Normal : ATTRIB1;
-  float2 UV  : ATTRIB2;
+  float4 Color: ATTRIB2;
+  float2 UV  : ATTRIB3;
 };
 
 struct PSInput 
 { 
   float4 Pos : SV_POSITION;
   float4 Normal : NORMAL;
+  float4 Color : COLOR;
   float2 UV  : TEX_COORD0;
   float2 WORLDZ: TEX_COORD1;
 };
@@ -32,5 +34,6 @@ void main(in  VSInput VSIn,
   PSIn.WORLDZ = VSIn.Pos.z;
   PSIn.Pos = mul( float4( VSIn.Pos, 1.0 ), g_WorldViewProj );
   PSIn.Normal = mul( float4( VSIn.Normal, 0.0 ), g_WorldViewProj );
+  PSIn.Color = VSIn.Color;
   PSIn.UV  = VSIn.UV;
 }
