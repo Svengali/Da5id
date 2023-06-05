@@ -15,6 +15,8 @@
 		</m_namedBuffers>
 	</m_pso>
 
+	<m_health max="50" />
+
 	<m_vertexBuf source="+robot" creator="ResDGCubeCreator">
 		<length v="0.5" />
 		<width  v="1.0" />
